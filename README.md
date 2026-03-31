@@ -4,6 +4,9 @@ I build tools that fix annoying things: browser extensions, automation systems, 
 
 ### 🛠️ Featured Projects
 
+* [**AITree - Project File Map Generator**](https://github.com/paracci/aitree) Scans any directory (or GitHub repo — no cloning required) and prints a clean, annotated file tree you can paste straight into any AI chat. Comes with a web UI, a live-watch mode, and a full [MCP server](https://modelcontextprotocol.io) so AI assistants like Claude can call it as a tool and read your files directly — without leaving the conversation.
+  *Stack: Python, MCP (Model Context Protocol), watchdog, tiktoken, gitpython*
+
 * [**LDR - Logo Dynamic Redirect**](https://github.com/paracci/ldr) An open standard for turning any brand logo into a smart, context-aware gateway. Like QR - but branded, intelligent, and updatable. Same logo, different people, different destinations. Includes a perceptual hashing engine, registry mock server, Web SDK, Node.js SDK, and an interactive demo. 68 tests, 0 failures.
   *Stack: JavaScript, Node.js, Perceptual Hashing (pHash/aHash/dHash), Open Standard (MIT)*
 
