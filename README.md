@@ -19,6 +19,11 @@ I build tools that fix annoying things: browser extensions, automation systems, 
 * [**Facepunch Wiki Turkish Translation Project**](https://github.com/Paracci/facepunch-wiki-tr) A massive automated translation system that keeps Facepunch (Garry's Mod, Rust, Steamworks) wikis up to date in Turkish. Uses a triple-layer hybrid AI model (Google Gemini, DeepL, and local nllb-200) to process 8,000+ pages while protecting technical elements like code blocks, function names, and HTML structures during translation.
   *Stack: Python, Node.js, Vanilla JS, Custom AI Validation*
 
+### 🚀 Upcoming Projects
+
+* [**Paracci Secure Messaging**](https://github.com/Paracci/paracci-msg) *(Upcoming)* A state-of-the-art, 100% offline and AI-resistant messaging framework built for absolute privacy and cryptographic sovereignty. Instead of trusting the host environment, it processes data entirely in volatile memory with zero disk footprint. It features hardware-calibrated Argon2id time-locks (Quantum Armor) to prevent brute-forcing, an autonomous self-inspecting defense system (IAR Sentinel) that triggers a nuclear shutdown if tampered with, and native OS-level protections like anti-screenshot and RAM shredding across Windows, macOS, and Linux. Comes with a glassmorphic Web UI.
+  *Stack: Python, Flask, Cryptography (Ed25519, XChaCha20-Poly1305, Argon2id), Windows/Linux/macOS Native APIs*
+
 ### 🔒 In Development
 
 * **AutoStudio** *(private)* A visual Chrome extension for building, editing, and testing web automation flows without writing code. Record browser interactions, edit them in a node-based flow canvas, and export to Playwright or Selenium.
