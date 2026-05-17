@@ -4,6 +4,9 @@ I build tools that fix annoying things: browser extensions, automation systems, 
 
 ### 🛠️ Featured Projects
 
+* [**Paracci Secure Messaging**](https://github.com/Paracci/paracci-msg) A 100% offline, AI-resistant secure messaging application built around `.paracci` envelope files, hardware-calibrated Argon2id time-locks, and cryptographic sovereignty. Features a native desktop UI via Flask + pywebview, a self-inspecting integrity sentinel that triggers an automatic shutdown on tampering, native OS-level anti-screenshot protection, single-use burn tracking, and RAM-safe decrypted message handling. Source-available for independent security auditing.
+  *Stack: Python, Flask, pywebview, Cryptography (Ed25519, XChaCha20-Poly1305, Argon2id), Windows/Linux/macOS Native APIs*
+
 * [**YouTube Shorts Channel Blocker & Ultimate Downloader**](https://github.com/paracci/youtube-shorts-blocker) A full-featured quality-of-life extension I use daily. One-click channel blocking, automatic ad muting and skipping, Shorts shelf removal, and a dual-mode video downloader with a native yt-dlp companion app for 4K/1080p and MP3 downloads. Fully wired settings panel, real-time toggle integration, a native host setup page, and full 11-language UI support, all styled to match YouTube's exact design language.
   *Stack: JavaScript, CSS, Chrome Extension V3 (MutationObserver, IntersectionObserver, Native Messaging)*
 
@@ -18,11 +21,6 @@ I build tools that fix annoying things: browser extensions, automation systems, 
 
 * [**Facepunch Wiki Turkish Translation Project**](https://github.com/Paracci/facepunch-wiki-tr) A massive automated translation system that keeps Facepunch (Garry's Mod, Rust, Steamworks) wikis up to date in Turkish. Uses a triple-layer hybrid AI model (Google Gemini, DeepL, and local nllb-200) to process 8,000+ pages while protecting technical elements like code blocks, function names, and HTML structures during translation.
   *Stack: Python, Node.js, Vanilla JS, Custom AI Validation*
-
-### 🚀 Upcoming Projects
-
-* [**Paracci Secure Messaging**](https://github.com/Paracci/paracci-msg) *(Upcoming)* A state-of-the-art, 100% offline and AI-resistant messaging framework built for absolute privacy and cryptographic sovereignty. Instead of trusting the host environment, it processes data entirely in volatile memory with zero disk footprint. It features hardware-calibrated Argon2id time-locks (Quantum Armor) to prevent brute-forcing, an autonomous self-inspecting defense system (IAR Sentinel) that triggers a nuclear shutdown if tampered with, and native OS-level protections like anti-screenshot and RAM shredding across Windows, macOS, and Linux. Comes with a glassmorphic Web UI.
-  *Stack: Python, Flask, Cryptography (Ed25519, XChaCha20-Poly1305, Argon2id), Windows/Linux/macOS Native APIs*
 
 ### 🔒 In Development
 
