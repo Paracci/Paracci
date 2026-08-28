@@ -16,16 +16,10 @@ I build tools that fix annoying things: browser extensions, automation systems, 
 * [**AITree - Project File Map Generator**](https://github.com/paracci/aitree) Scans any directory (or GitHub repo — no cloning required) and prints a clean, annotated file tree you can paste straight into any AI chat. Comes with a web UI, a live-watch mode, and a full [MCP server](https://modelcontextprotocol.io) so AI assistants like Claude can call it as a tool and read your files directly — without leaving the conversation.
   *Stack: Python, MCP (Model Context Protocol), watchdog, tiktoken, gitpython*
 
-* [**LDR - Logo Dynamic Redirect**](https://github.com/paracci/ldr) An open standard for turning any brand logo into a smart, context-aware gateway. Like QR - but branded, intelligent, and updatable. Same logo, different people, different destinations. Includes a perceptual hashing engine, registry mock server, Web SDK, Node.js SDK, and an interactive demo. 68 tests, 0 failures.
-  *Stack: JavaScript, Node.js, Perceptual Hashing (pHash/aHash/dHash), Open Standard (MIT)*
-
 * [**Facepunch Wiki Turkish Translation Project**](https://github.com/Paracci/facepunch-wiki-tr) A massive automated translation system that keeps Facepunch (Garry's Mod, Rust, Steamworks) wikis up to date in Turkish. Uses a triple-layer hybrid AI model (Google Gemini, DeepL, and local nllb-200) to process 8,000+ pages while protecting technical elements like code blocks, function names, and HTML structures during translation.
   *Stack: Python, Node.js, Vanilla JS, Custom AI Validation*
 
 ### 🔒 In Development
-
-* **AutoStudio** *(private)* A visual Chrome extension for building, editing, and testing web automation flows without writing code. Record browser interactions, edit them in a node-based flow canvas, and export to Playwright or Selenium.
-  *Stack: TypeScript, React 18, Vite, React Flow, Vitest*
 
 * **Deep-Angler-Fish** *(private)* A Shodan-style internet scanning and vulnerability analysis engine. Distributed microservices architecture with multi-protocol support (HTTP, SSH, RDP, SCADA/ICS), Nuclei/ZAP integration, CVE matching via NVD, and OCR on captured screenshots.
   *Stack: Python, Go, Elasticsearch, RabbitMQ, Docker*
