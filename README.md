@@ -29,11 +29,11 @@ I build tools that fix annoying or difficult problems: developer tooling, browse
 
 ### 🔒 Other Work in Development
 
-* **Deep-Angler-Fish** *(private)* A Shodan-style internet scanning and vulnerability analysis engine. Distributed microservices architecture with multi-protocol support (HTTP, SSH, RDP, SCADA/ICS), Nuclei/ZAP integration, CVE matching via NVD, and OCR on captured screenshots.
-  *Stack: Python, Go, Elasticsearch, RabbitMQ, Docker*
+* **Deep-Angler-Fish V2** *(private)* — A security research platform for internet asset discovery and external attack-surface observation. V2 is rebuilt around a modular control-plane foundation with passive certificate-transparency discovery, DNS/TCP/TLS/HTTP observation, tenant-scoped search and history, change detection and alerts, passive vulnerability-feed matching, regional launch controls, and governed network-location intelligence. Its contract-first, fail-closed architecture uses PostgreSQL as the authoritative source of truth, RabbitMQ for transient delivery, OpenSearch as a disposable projection, and Redis as a distributed rate authority, with tenant isolation, RBAC/RLS, audit context, idempotency, bounded retries, and cancellation built into the baseline.
+  *Stack: Python 3.12, FastAPI, PostgreSQL, RabbitMQ, OpenSearch, Redis, SQLAlchemy, Alembic, Docker*
 
 ### 💻 Tech Stack & Interests
 
 * **Languages:** JavaScript, TypeScript, Python, Go, HTML/CSS
 * **Backend & Tools:** Node.js, Fastify, Express, FastAPI, Docker, OpenAPI
-* **Focus Areas:** AI Decision Systems, Moderation Infrastructure, Developer Tools, Browser Extensions, Automation, Web Security Research, Open Standards
+* **Focus Areas:** AI Decision Systems, Moderation Infrastructure, Developer Tools, Browser Extensions, Web Security Research, Open Standards
