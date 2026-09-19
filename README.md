@@ -1,6 +1,14 @@
 # Hi, I'm Paracci 👋
 
-I build tools that fix annoying things: browser extensions, automation systems, and large-scale translation infrastructure. Most of what I make started as a personal itch I couldn't stop scratching. A lot of it ended up as open source.
+I build tools that fix annoying or difficult problems: developer tooling, browser extensions, automation systems, security-focused software, and AI-assisted infrastructure. Most of what I make starts as a problem I want solved properly, then grows into something reusable.
+
+### 🚧 Current Focus
+
+* **JevSentinel** *(private during development; planned open-source release)* — A self-hosted, context-aware moderation decision API being designed around TypeSafe Jev for games, forums, chat systems, bots, and online communities. Instead of acting as a simple profanity filter, JevSentinel is designed to evaluate harmful language together with intent, targeting, conversational context, roleplay, friendly banter, quoted/reported speech, severity, and optional moderation history. It then combines those probabilistic judgments with deterministic, operator-controlled policy and returns structured actions that the integrating application can enforce however it chooses.
+
+  The project is contract-first: its architecture, OpenAPI draft, configuration schema, policy/action model, privacy model, threat model, evaluation strategy, and AI-agent development rules are being defined before the provider implementation is finalized. It is also designed for custom actions, stateless deployments, configurable retention, human-review fallbacks, and conservative guardrails around high-impact automated moderation.
+
+  *Planned stack: TypeScript, Node.js, Fastify, TypeSafe Jev, OpenAPI 3.1, JSON Schema, YAML*
 
 ### 🛠️ Featured Projects
 
@@ -16,10 +24,10 @@ I build tools that fix annoying things: browser extensions, automation systems, 
 * [**AITree - Project File Map Generator**](https://github.com/paracci/aitree) Scans any directory (or GitHub repo — no cloning required) and prints a clean, annotated file tree you can paste straight into any AI chat. Comes with a web UI, a live-watch mode, and a full [MCP server](https://modelcontextprotocol.io) so AI assistants like Claude can call it as a tool and read your files directly — without leaving the conversation.
   *Stack: Python, MCP (Model Context Protocol), watchdog, tiktoken, gitpython*
 
-* [**Facepunch Wiki Turkish Translation Project**](https://github.com/Paracci/facepunch-wiki-tr) A massive automated translation system that keeps Facepunch (Garry's Mod, Rust, Steamworks) wikis up to date in Turkish. Uses a triple-layer hybrid AI model (Google Gemini, DeepL, and local nllb-200) to process 8,000+ pages while protecting technical elements like code blocks, function names, and HTML structures during translation.
+* [**Facepunch Wiki Turkish Translation Project**](https://github.com/Paracci/facepunch-wiki-tr) A large automated translation system that keeps Facepunch (Garry's Mod, Rust, Steamworks) wikis up to date in Turkish. Uses a triple-layer hybrid AI model (Google Gemini, DeepL, and local nllb-200) to process 8,000+ pages while protecting technical elements like code blocks, function names, and HTML structures during translation.
   *Stack: Python, Node.js, Vanilla JS, Custom AI Validation*
 
-### 🔒 In Development
+### 🔒 Other Work in Development
 
 * **Deep-Angler-Fish** *(private)* A Shodan-style internet scanning and vulnerability analysis engine. Distributed microservices architecture with multi-protocol support (HTTP, SSH, RDP, SCADA/ICS), Nuclei/ZAP integration, CVE matching via NVD, and OCR on captured screenshots.
   *Stack: Python, Go, Elasticsearch, RabbitMQ, Docker*
@@ -27,5 +35,5 @@ I build tools that fix annoying things: browser extensions, automation systems, 
 ### 💻 Tech Stack & Interests
 
 * **Languages:** JavaScript, TypeScript, Python, Go, HTML/CSS
-* **Backend & Tools:** Node.js, Express, FastAPI, Docker
-* **Focus Areas:** Browser Extensions, DOM Manipulation, AI Automation & Translation Systems, Web Security Research, SPA Development, Open Standards
+* **Backend & Tools:** Node.js, Fastify, Express, FastAPI, Docker, OpenAPI
+* **Focus Areas:** AI Decision Systems, Moderation Infrastructure, Developer Tools, Browser Extensions, Automation, Web Security Research, Open Standards
