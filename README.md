@@ -1,39 +1,300 @@
+<div align="center">
+
 # Hi, I'm Paracci 👋
 
-I build tools that fix annoying or difficult problems: developer tooling, browser extensions, automation systems, security-focused software, and AI-assisted infrastructure. Most of what I make starts as a problem I want solved properly, then grows into something reusable.
+### I build practical software for real-world problems.
 
-### 🚧 Current Focus
+**Developer Tools** · **AI Systems** · **Security** · **Browser Extensions** · **Automation**
 
-* **JevSentinel** *(private during development; planned open-source release)* — A self-hosted, context-aware moderation decision API being designed around TypeSafe Jev for games, forums, chat systems, bots, and online communities. Instead of acting as a simple profanity filter, JevSentinel is designed to evaluate harmful language together with intent, targeting, conversational context, roleplay, friendly banter, quoted/reported speech, severity, and optional moderation history. It then combines those probabilistic judgments with deterministic, operator-controlled policy and returns structured actions that the integrating application can enforce however it chooses.
+<br>
 
-  The project is contract-first: its architecture, OpenAPI draft, configuration schema, policy/action model, privacy model, threat model, evaluation strategy, and AI-agent development rules are being defined before the provider implementation is finalized. It is also designed for custom actions, stateless deployments, configurable retention, human-review fallbacks, and conservative guardrails around high-impact automated moderation.
+[![GitHub](https://img.shields.io/badge/GitHub-Paracci-181717?style=for-the-badge&logo=github)](https://github.com/Paracci)
+![Status](https://img.shields.io/badge/Status-Actively%20Building-2ea44f?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Focus-Useful%20Software-0969da?style=for-the-badge)
 
-  *Planned stack: TypeScript, Node.js, Fastify, TypeSafe Jev, OpenAPI 3.1, JSON Schema, YAML*
+</div>
 
-### 🛠️ Featured Projects
+---
 
-* [**Paracci Secure Messaging**](https://github.com/Paracci/paracci-msg) A 100% offline, AI-resistant secure messaging application built around `.paracci` envelope files, hardware-calibrated Argon2id time-locks, and cryptographic sovereignty. Features a native desktop UI via Flask + pywebview, a self-inspecting integrity sentinel that triggers an automatic shutdown on tampering, native OS-level anti-screenshot protection, single-use burn tracking, and RAM-safe decrypted message handling. Source-available for independent security auditing.
-  *Stack: Python, Flask, pywebview, Cryptography (Ed25519, XChaCha20-Poly1305, Argon2id), Windows/Linux/macOS Native APIs*
+## 👨‍💻 About Me
 
-* [**YouTube Shorts Channel Blocker & Ultimate Downloader**](https://github.com/paracci/youtube-shorts-blocker) A full-featured quality-of-life extension I use daily. One-click channel blocking, automatic ad muting and skipping, Shorts shelf removal, and a dual-mode video downloader with a native yt-dlp companion app for 4K/1080p and MP3 downloads. Fully wired settings panel, real-time toggle integration, a native host setup page, and full 11-language UI support, all styled to match YouTube's exact design language.
-  *Stack: JavaScript, CSS, Chrome Extension V3 (MutationObserver, IntersectionObserver, Native Messaging)*
+I build software around problems that are **repetitive, difficult, or poorly solved**.
 
-* [**X (Twitter) Auto Ad Blocker**](https://github.com/paracci/x-auto-ad-blocker) A lightweight Chrome extension I built for my daily browsing. Unlike traditional blockers that just hide elements with CSS, this extension mimics user interaction to permanently block the advertiser's account in the background. Because the account itself is blocked, your feed stays ad-free across all your devices. Also includes a media downloader for videos, GIFs, and images, and full 11-language UI support.
-  *Stack: JavaScript, CSS, Chrome Extension V3 (MutationObserver)*
+My work spans **developer tooling, browser extensions, automation systems, security-focused software, and AI-assisted infrastructure**. Most projects begin as something I personally want solved properly, then evolve into reusable tools with a strong focus on clarity, reliability, operator control, and practical value.
 
-* [**AITree - Project File Map Generator**](https://github.com/paracci/aitree) Scans any directory (or GitHub repo — no cloning required) and prints a clean, annotated file tree you can paste straight into any AI chat. Comes with a web UI, a live-watch mode, and a full [MCP server](https://modelcontextprotocol.io) so AI assistants like Claude can call it as a tool and read your files directly — without leaving the conversation.
-  *Stack: Python, MCP (Model Context Protocol), watchdog, tiktoken, gitpython*
+I am especially interested in systems where AI can assist decision-making **without replacing deterministic policy, explicit configuration, or human oversight**.
 
-* [**Facepunch Wiki Turkish Translation Project**](https://github.com/Paracci/facepunch-wiki-tr) A large automated translation system that keeps Facepunch (Garry's Mod, Rust, Steamworks) wikis up to date in Turkish. Uses a triple-layer hybrid AI model (Google Gemini, DeepL, and local nllb-200) to process 8,000+ pages while protecting technical elements like code blocks, function names, and HTML structures during translation.
-  *Stack: Python, Node.js, Vanilla JS, Custom AI Validation*
+<br>
 
-### 🔒 Other Work in Development
+**What matters to me**
 
-* **Deep-Angler-Fish V2** *(private)* — A security research platform for internet asset discovery and external attack-surface observation. V2 is rebuilt around a modular control-plane foundation with passive certificate-transparency discovery, DNS/TCP/TLS/HTTP observation, tenant-scoped search and history, change detection and alerts, passive vulnerability-feed matching, regional launch controls, and governed network-location intelligence. Its contract-first, fail-closed architecture uses PostgreSQL as the authoritative source of truth, RabbitMQ for transient delivery, OpenSearch as a disposable projection, and Redis as a distributed rate authority, with tenant isolation, RBAC/RLS, audit context, idempotency, bounded retries, and cancellation built into the baseline.
-  *Stack: Python 3.12, FastAPI, PostgreSQL, RabbitMQ, OpenSearch, Redis, SQLAlchemy, Alembic, Docker*
+`Clarity` · `Reliability` · `Operator Control` · `Secure Defaults` · `Practical Value`
 
-### 💻 Tech Stack & Interests
+---
 
-* **Languages:** JavaScript, TypeScript, Python, Go, HTML/CSS
-* **Backend & Tools:** Node.js, Fastify, Express, FastAPI, Docker, OpenAPI
-* **Focus Areas:** AI Decision Systems, Moderation Infrastructure, Developer Tools, Browser Extensions, Web Security Research, Open Standards
+## 🚧 What I'm Building Now
+
+### Paracci Moderation
+
+![Status](https://img.shields.io/badge/status-in%20development-f59e0b?style=flat-square)
+![Visibility](https://img.shields.io/badge/visibility-private-6e7681?style=flat-square)
+![Type](https://img.shields.io/badge/type-hosted%20moderation%20platform-8250df?style=flat-square)
+
+**Hosted moderation infrastructure for games, communities, forums, chat systems, and other user-generated-content products.**
+
+The project is developed internally under the codename **JevSentinel** while transitioning from its original self-hosted API concept into the broader **Paracci Moderation** platform.
+
+The platform is designed to combine semantic moderation, deterministic policy, trusted subject history, review workflows, analytics, maintained integrations, and a developer API without handing enforcement authority directly to the underlying semantic provider.
+
+```text
+Contextual Language Understanding
+              ↓
+Structured Moderation Signals
+              ↓
+Deterministic Policy + Trusted History
+              ↓
+Review / Decision / Integration Enforcement
+```
+
+Paracci Moderation uses TypeSafe Jev as an underlying semantic decision provider. Customer-facing moderation behavior remains operator-controlled.
+
+**Current foundation**
+
+`TypeScript` · `Node.js 24` · `Fastify` · `Next.js` · `React`  
+`PostgreSQL` · `Zod` · `OpenAPI 3.1` · `TypeSafe Jev`
+
+<sub>Private development · Hosted moderation infrastructure · Provider-neutral customer-facing design</sub>
+
+---
+
+## ✨ Featured Projects
+
+<p align="center">
+  A selection of tools and systems I've designed, built, and actively developed.
+</p>
+
+### Primary Work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔐 [Paracci Secure Messaging](https://github.com/Paracci/paracci-msg)
+
+<sub>OFFLINE SECURITY SOFTWARE</sub>
+
+<br>
+
+Serverless, offline-first desktop software for secure two-party encrypted file exchange without external network or account dependencies.
+
+It uses authenticated `.paracci` envelopes, local replay protection, hybrid post-quantum key exchange, and platform-native credential protection.
+
+<br>
+
+`Python` · `Flask` · `pywebview`  
+`X25519` · `ML-KEM-768` · `Ed25519`  
+`ChaCha20-Poly1305` · `HKDF` · `Argon2id`
+
+<br>
+
+[**Explore project →**](https://github.com/Paracci/paracci-msg)
+
+</td>
+<td width="50%" valign="top">
+
+### 🌳 [AITree](https://github.com/Paracci/aitree)
+
+<sub>DEVELOPER TOOL</sub>
+
+<br>
+
+Generate clean, AI-friendly project maps from local directories or GitHub repositories, with live watching, a web UI, and native MCP integration.
+
+<br><br><br><br>
+
+`Python` · `MCP` · `watchdog`  
+`tiktoken` · `gitpython`
+
+<br><br>
+
+[**Explore project →**](https://github.com/Paracci/aitree)
+
+</td>
+</tr>
+</table>
+
+<br>
+
+### Browser Tools
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### ▶️ [YouTube Shorts Channel Blocker & Ultimate Downloader](https://github.com/Paracci/youtube-shorts-blocker)
+
+<sub>PRIVACY-FOCUSED BROWSER EXTENSION</sub>
+
+<br>
+
+A Chrome MV3 extension for local channel filtering, Shorts cleanup, best-effort ad handling, and high-quality media downloads through an optional native `yt-dlp` + verified `ffmpeg` companion workflow.
+
+<br>
+
+`JavaScript` · `CSS` · `Chrome Extension MV3`  
+`Native Messaging` · `yt-dlp` · `ffmpeg`
+
+<br>
+
+[**Explore project →**](https://github.com/Paracci/youtube-shorts-blocker)
+
+</td>
+<td width="50%" valign="top">
+
+### 𝕏 [X (Twitter) Auto Ad Blocker](https://github.com/Paracci/x-auto-ad-blocker)
+
+<sub>BROWSER AUTOMATION</sub>
+
+<br>
+
+Detects sponsored posts in real time and lets users either hide them locally or automatically block the advertiser's account on X, with built-in media downloads and multilingual UI support.
+
+<br><br>
+
+`JavaScript` · `CSS` · `Chrome Extension MV3`
+
+<br>
+
+[**Explore project →**](https://github.com/Paracci/x-auto-ad-blocker)
+
+</td>
+</tr>
+</table>
+
+<br>
+
+### Automation & Localization
+
+<table>
+<tr>
+<td valign="top">
+
+### 🇹🇷 [Facepunch Wiki Turkish Translation Project](https://github.com/Paracci/facepunch-wiki-tr)
+
+<sub>AUTOMATION · AI · DOCUMENTATION</sub>
+
+<br>
+
+An automated translation and update system for Facepunch documentation covering **Garry's Mod, Rust, Steamworks, and the general Facepunch wiki**, while protecting code blocks, function names, API parameters, HTML structures, and other technical content during translation.
+
+<br>
+
+`Python` · `Node.js` · `Gemini` · `DeepL` · `NLLB-200` · `CTranslate2`
+
+<br>
+
+[**Explore project →**](https://github.com/Paracci/facepunch-wiki-tr)
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧪 In Development
+
+### Deep-Angler-Fish V2
+
+**Security research platform for internet asset discovery and external attack-surface observation.**
+
+![Status](https://img.shields.io/badge/status-private%20development-f59e0b?style=flat-square)
+![Launch](https://img.shields.io/badge/public%20launch-not%20enabled-6e7681?style=flat-square)
+![Area](https://img.shields.io/badge/area-security%20research-d1242f?style=flat-square)
+
+V2 is under private development with public launch kept explicitly disabled while engineering, validation, and readiness work continues.
+
+Its architecture emphasizes authoritative state, bounded distributed processing, disposable search projections, fail-closed rate control, and explicit operational guardrails.
+
+### Architecture Direction
+
+`Authoritative state` · `Bounded delivery` · `Disposable projections` · `Fail-closed rate control` · `Explicit control-plane boundaries`
+
+### Research & Observation Scope
+
+`Certificate Transparency` · `DNS` · `TCP` · `TLS` · `HTTP`  
+`Change Detection` · `Alerts` · `Network-Location Intelligence`
+
+### Architecture Priorities
+
+`Tenant Isolation` · `RBAC/RLS` · `Auditability` · `Idempotency` · `Bounded Retries` · `Cancellation` · `Fail-Closed Behavior`
+
+<sub>Private development · Public launch not enabled</sub>
+
+---
+
+## 🧰 Tech I Work With
+
+| Area | Technologies |
+| --- | --- |
+| **Languages** | TypeScript · JavaScript · Python · Go |
+| **Backend & Web** | Node.js · Fastify · FastAPI · Next.js · React |
+| **Data & Infrastructure** | PostgreSQL · Redis · RabbitMQ · OpenSearch · Docker |
+| **APIs & Standards** | OpenAPI 3.1 · JSON Schema · MCP |
+| **Security & Crypto** | Ed25519 · X25519 · ML-KEM-768 · ChaCha20-Poly1305 · Argon2id |
+| **Browser Tooling** | Chrome Extension MV3 · Native Messaging |
+| **Developer Workflow** | Git · GitHub · Automation tooling |
+
+---
+
+## 🔎 Areas of Interest
+
+### 🧠 AI & Decision Systems
+Context-aware moderation · structured AI outputs · evaluation · guardrails · human-review workflows · deterministic policy layers
+
+### 🛠 Developer Tooling
+Developer experience · project automation · AI-assisted workflows · MCP · open standards · interoperable systems
+
+### 🛡 Security & Resilient Systems
+Secure defaults · auditability · attack-surface research · predictable failure modes · operator control
+
+### 🌐 Browser & Web Automation
+Browser extensions · native integrations · content workflows · quality-of-life tooling · user-controlled automation
+
+---
+
+## 🧭 How I Build
+
+> **Practical over ornamental.**  
+> Solve the real problem first.
+
+> **Explicit over implicit.**  
+> Configuration and behavior should be understandable.
+
+> **Operator control over black-box automation.**  
+> Especially for high-impact decisions.
+
+> **Secure defaults.**  
+> Systems should fail safely where possible.
+
+> **Reusable by design.**  
+> Personal tools should be able to grow into dependable software.
+
+---
+
+## 🤝 Connect
+
+<div align="center">
+
+The best place to follow my work, explore source code, report issues, or start a technical discussion is GitHub.
+
+<br><br>
+
+[![Visit GitHub](https://img.shields.io/badge/Visit%20GitHub-Paracci-181717?style=for-the-badge&logo=github)](https://github.com/Paracci)
+
+<br><br>
+
+**Build useful things. Keep them understandable.**
+
+<sub>Developer Tools · AI Systems · Security · Automation</sub>
+
+</div>
