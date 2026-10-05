@@ -287,11 +287,11 @@ Browser extensions · native integrations · content workflows · quality-of-lif
 
 The best place to follow my work, explore source code, report issues, or start a technical discussion is GitHub.
 
-<br><br>
+<br>
 
 [![Visit GitHub](https://img.shields.io/badge/Visit%20GitHub-Paracci-181717?style=for-the-badge&logo=github)](https://github.com/Paracci)
 
-<br><br>
+<br>
 
 **Build useful things. Keep them understandable.**
 
