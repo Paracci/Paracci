@@ -131,13 +131,13 @@ Generate clean, AI-friendly project maps from local directories or GitHub reposi
 <tr>
 <td width="50%" valign="top">
 
-### ▶️ [YouTube Shorts Channel Blocker & Ultimate Downloader](https://github.com/Paracci/youtube-shorts-blocker)
+### ▶️ [Paracci YouTube Toolkit](https://github.com/Paracci/youtube-toolkit)
 
 <sub>PRIVACY-FOCUSED BROWSER EXTENSION</sub>
 
 <br>
 
-A Chrome MV3 extension for local channel filtering, Shorts cleanup, best-effort ad handling, and high-quality media downloads through an optional native `yt-dlp` + verified `ffmpeg` companion workflow.
+A privacy-focused Chrome MV3 extension with local channel filtering, Shorts controls, best-effort ad skipping, and high-quality video/audio downloads. Its native `yt-dlp` + verified `ffmpeg` companion also supports signed GitHub updates.
 
 <br>
 
@@ -146,7 +146,7 @@ A Chrome MV3 extension for local channel filtering, Shorts cleanup, best-effort 
 
 <br>
 
-[**Explore project →**](https://github.com/Paracci/youtube-shorts-blocker)
+[**Explore project →**](https://github.com/Paracci/youtube-toolkit) · [**Live demo →**](https://paracci.github.io/youtube-toolkit/)
 
 </td>
 <td width="50%" valign="top">
